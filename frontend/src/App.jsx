@@ -20,9 +20,9 @@ function App() {
               {/* left side */}
               <div className="flex flex-2/3 flex-col justify-around items-center flex-wrap gap-4">
                 <div className="mt-4 w-full"><Card/></div>
-                <div className="flex flex-col sm:flex-row justify-around items-center flex-wrap gap-4">
-                  <div><ContentCard/></div>
-                  <div><ContentCard/></div>
+                <div className="flex flex-col w-full sm:flex-row justify-around items-center flex-wrap gap-4">
+                  <div className="flex-1"><ContentCard/></div>
+                  <div className="flex-1"><ContentCard/></div>
                 </div>
               </div>
               {/* right side  */}
