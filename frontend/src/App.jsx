@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import useTheme from "./store";
+import Card from "./components/Card";
+import ContentCard from "./components/ContentCard";
+import ProjectAccordian from "./components/ProjectAccordian";
+import SocialCard from "./components/SocialCard";
 
 function App() {
   const { theme } = useTheme();
@@ -12,6 +16,23 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className="flex flex-col md:flex-row justify-around items-center p-4 gap-6">
+              {/* left side */}
+              <div className="flex flex-2/3 flex-col justify-around items-center flex-wrap gap-4">
+                <div className="mt-4 w-full"><Card/></div>
+                <div className="flex flex-col sm:flex-row justify-around items-center flex-wrap gap-4">
+                  <div><ContentCard/></div>
+                  <div><ContentCard/></div>
+                </div>
+              </div>
+              {/* right side  */}
+              <div className="flex flex-1/3 flex-col justify-start items-center flex-wrap gap-4">
+                <div className="w-full"><ProjectAccordian/></div>
+                <div className="w-full">
+                  <SocialCard/>
+                </div>
+              </div>
+      </div>
     </>
   );
 }
