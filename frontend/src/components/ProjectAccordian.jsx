@@ -2,8 +2,8 @@ import React from 'react'
 
 function ProjectAccordian() {
   return (
-  <div className="join join-vertical bg-base-100 ">
-  <div className="collapse collapse-arrow join-item border-base-300 border">
+  <div className="join join-vertical bg-base-100 shadow-2xl glass rounded-2xl overflow-hidden">
+  <div className="collapse collapse-arrow join-item border-base-300 border-b">
     <input type="radio" name="my-accordion-4" defaultChecked />
     <div className="collapse-title font-semibold">How do I create an account?</div>
     <div className="collapse-content text-sm ">Click the "Sign Up" button in the top right corner and follow the registration process.
@@ -15,7 +15,7 @@ function ProjectAccordian() {
   </figure>
   </div>
   </div>
-   <div className="collapse collapse-arrow join-item border-base-300 border">
+   <div className="collapse collapse-arrow join-item border-base-300 border-b">
     <input type="radio" name="my-accordion-4" defaultChecked />
     <div className="collapse-title font-semibold">How do I create an account?</div>
     <div className="collapse-content text-sm ">Click the "Sign Up" button in the top right corner and follow the registration process.
@@ -27,7 +27,7 @@ function ProjectAccordian() {
   </figure>
   </div>
   </div>
-  <div className="collapse collapse-arrow join-item border-base-300 border">
+  <div className="collapse collapse-arrow join-item border-base-300 border-b">
     <input type="radio" name="my-accordion-4" defaultChecked />
     <div className="collapse-title font-semibold">How do I create an account?</div>
     <div className="collapse-content text-sm ">Click the "Sign Up" button in the top right corner and follow the registration process.

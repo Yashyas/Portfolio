@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card() {
   return (
-   <div className="card lg:card-side bg-base-100 shadow-sm">
+   <div className="card lg:card-side bg-base-100 glass shadow-2xl">
   <figure>
     <img
       src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"

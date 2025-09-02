@@ -5,6 +5,8 @@ import Card from "./components/Card";
 import ContentCard from "./components/ContentCard";
 import ProjectAccordian from "./components/ProjectAccordian";
 import SocialCard from "./components/SocialCard";
+import Footer from "./components/Footer";
+import FrontendCards from "./components/FrontendCards";
 
 function App() {
   const { theme } = useTheme();
@@ -33,6 +35,9 @@ function App() {
                 </div>
               </div>
       </div>
+      <FrontendCards/>
+      
+      <Footer/>
     </>
   );
 }
