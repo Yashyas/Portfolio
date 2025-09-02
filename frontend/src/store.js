@@ -1,11 +1,12 @@
 import { create } from "zustand";
 
 const useTheme = create((set) => ({
-  theme: "cupcake",
+  theme: "emerald",
   toggle: () =>
     set((state) => ({
-      theme: state.theme === "cupcake" ? "coffee" : "cupcake",
+      theme: state.theme === "emerald" ? "coffee" : "emerald",
     })),
 }));
 
 export default useTheme;
+

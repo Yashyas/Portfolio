@@ -7,9 +7,10 @@ import ProjectAccordian from "./components/ProjectAccordian";
 import SocialCard from "./components/SocialCard";
 import Footer from "./components/Footer";
 import FrontendCards from "./components/FrontendCards";
+import BackendCards from "./components/BackendCards";
 
 function App() {
-  const { theme } = useTheme();
+  const { theme} = useTheme();
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -28,14 +29,15 @@ function App() {
                 </div>
               </div>
               {/* right side  */}
-              <div className="flex flex-1/3 flex-col justify-start items-center flex-wrap gap-4">
+              <div className="flex flex-1/3 flex-col justify-between items-center flex-wrap gap-4">
                 <div className="w-full"><ProjectAccordian/></div>
-                <div className="w-full">
+                <div className="w-full ">
                   <SocialCard/>
                 </div>
               </div>
       </div>
       <FrontendCards/>
+      <BackendCards/>
       
       <Footer/>
     </>
