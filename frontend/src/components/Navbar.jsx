@@ -1,6 +1,7 @@
 import React from "react";
 import useTheme from "../store";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { theme, toggle } = useTheme();
@@ -30,13 +31,13 @@ function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Project</a>
+              <Link to="/project">Project</Link>
             </li>
             <li>
-              <a>About</a>
+              <Link to="/">About</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -51,14 +52,14 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Project</a>
-          </li>
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
+              <Link to="/project">Project</Link>
+            </li>
+            <li>
+              <Link to="/">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
         </ul>
       </div>
 
